@@ -1,0 +1,228 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+button {
+    border-radius: 12px;
+    box-shadow: none;
+    border: none;
+    width: 9rem;
+    color: black;
+    background: #fff;
+    transition-duration: 0.5s;
+    box-shadow: 0 0 17px 3px #00000040;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 60vh;
+    
+}
+.mockup {
+    margin-left: 10rem;
+    animation-name: mainphoto;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;    
+    animation-delay: 0.3s;
+}
+
+.textf {
+    align-self: center;
+    width: 27rem;
+}
+.textifbutton {
+    width: 15rem;
+    height: 3rem;
+    background-color: #fe52c0;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0px black;
+}
+.headmain {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #edfbfe;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+.textarticle p {
+    color: #93979a;
+}
+
+.one {
+    margin-top: 4rem !important;
+}
+.one,.two,.three {
+    display: flex;
+    border-radius: 1rem;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 17px 3px #00000040;
+    height: 20rem;
+    width: 70%;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.illimg {
+    max-width: 409px;
+}
+.three {
+    margin-bottom: 4rem !important;
+}
+.textarticle {
+    width: 50%;
+    align-self: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 1rem;
+}
+.icona {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #eee;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    transition-duration: 0.3s;
+
+}
+.icona:hover {
+    background-color: #fe52c0;
+}
+.social ul li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+.icon {
+    transform: translateX(-2.5rem);
+    position: absolute;
+}
+.infoarea {
+    width: 20%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40vh;
+    /* background-color: #00252e; */
+    background-color: #00252e;
+    color: white;
+    color: ;
+}
+
+
+
+@media (max-width : 767px) {
+
+main {
+    flex-direction: column-reverse;
+    height: auto;
+}
+.textf {
+    width: 18rem;
+
+}
+.headlogo {
+    width: 123px;
+
+}
+button {
+    width: 8rem;
+    height: 2rem;
+
+}
+.mockup {
+    margin-left: 0;
+}
+.one, .two, .three {
+    flex-direction: column-reverse;
+    height: auto;
+}
+.textarticle h1, .textarticle p {
+    text-align: center;
+
+}
+.illimg {
+    max-width: 100%;
+}
+.textarticle {
+    width: 100%;
+}
+footer {
+    height: auto;
+    flex-direction: column;
+    align-items: unset;
+}
+ul {
+    width: 100vw;
+
+}
+footer ul li {
+    margin-left: 4rem;
+    margin-top: 1rem;
+
+}
+.logo a img {
+    margin-left: 1rem !important;
+}
+.social {
+    margin-left: 1rem;
+}
+}
+
+
+
+
+
+
+
+
+@keyframes mainphoto {
+
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0px);
+
+    }
+
+    
+}
