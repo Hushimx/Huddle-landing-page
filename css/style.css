@@ -30,7 +30,6 @@ main {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    height: 60vh;
     
 }
 .mockup {
@@ -88,6 +87,9 @@ article {
     margin-right: auto;
     margin-left: auto;
 }
+.two {
+    flex-direction : row-reverse;
+}
 .illimg {
     max-width: 409px;
 }
@@ -137,7 +139,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 40vh;
     /* background-color: #00252e; */
     background-color: #00252e;
     color: white;
